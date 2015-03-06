@@ -1,0 +1,51 @@
+
+<div id="loginPage">
+    <div class="test123">
+        <img src="companyLogo.png">
+        <table>
+            
+            <tr>
+            <td><input name="username" type="text" value="" style="border-radius: 5px;" placeholder="Username" /></td>
+            </tr>
+                        
+            <tr>
+            <td><input name="password" type="password" value="" maxlength="20" size="20" style="border-radius: 5px;" 
+            placeholder="Password" />
+            </td>
+            </tr>
+            
+                        
+            <tr>
+            <td><button class="button button-primary" ng-click="checkUser()" >Login</button>
+             <a ng-href="#/register"> <button class="button button-success">Register</button></a>
+             <button class="button button-success"  ng-click="loginGoogle()">Login</button>
+            </td>
+            </tr> 
+            
+      
+            <tr>
+            <td>
+            <span style='color:red; font-style: italic; display:none;' class="emptyUsername">
+            Please enter a username!</span>
+                            
+            <span style='color:red; font-style: italic; display:none;' class="emptyPassword">
+            Please enter a password!</span>
+                            
+            <span style='color:red; font-style: italic; display:none;' class="duplicatedUser">
+            Existing username is used!</span>
+                            
+            <span style='color:red; font-style: italic; display:none;' class="incorrectInput">
+            Invalid credential!</span>
+             
+            </td>
+            </tr>
+        </table>
+        
+        <br><br>
+        <div>
+            <a href="feedback.html">Click here to leave a feedback</a>
+        </div>
+    </div>
+    
+</div>
+

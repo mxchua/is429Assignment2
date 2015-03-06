@@ -1,0 +1,45 @@
+<div id="loginPage">
+    <div class="test123">
+        <img src="companyLogo.png"><br><br>
+        <table>
+        
+       
+        <tr>
+        <td><input name="username" type="text" value="" style="border-radius: 5px;" placeholder="Username" size="30" /></td>
+        </tr>
+        
+        
+        <tr>
+        <td><input name="password" type="password" value="" maxlength="30" size="30" style="border-radius: 5px;"  placeholder="Password" />
+        </td>
+        </tr>
+        
+      
+         <tr>
+        <td><input name="password2" type="password" value="" maxlength="30" size="30" style="border-radius: 5px;"  placeholder="Confirmed Password" />
+        </td>
+        </tr>
+            
+        <tr>
+        <td><button class="btn btn-warning" ng-click="createUser()" ><span>Create User</span></button></td>
+        </tr>
+
+        <tr>
+        <td>
+            <span style='color:red; font-style: italic; display:none;' class="emptyUsername">
+                Please enter a username!</span>
+                
+            <span style='color:red; font-style: italic; display:none;' class="emptyPassword">
+                Please enter a password!</span>
+                
+            <span style='color:red; font-style: italic; display:none;' class="duplicatedUser">
+                Existing username is used!</span>
+                
+             <span style='color:red; font-style: italic; display:none;' class="diffPassword">
+                Password does not match confirmed password!</span>
+        </td>
+        </tr>
+        </table>
+    </div>
+</div>
+

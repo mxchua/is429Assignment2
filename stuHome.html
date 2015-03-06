@@ -1,0 +1,11 @@
+<div>
+    <h2>Join Session</h2>
+    <span>Session ID</span>
+    <input type="text" name="userInputSessionID" class="form-control" placeholder="Enter session ID"/>
+    <span>Password (required if session is protected)</span>
+    <input type="password" name="userInputPassword" class="form-control" placeholder="Enter password"/>
+    <button class="btn btn-default pull-right" ng-click="retrieveSession()">Join Session</button>
+    <span style='color:red; font-style: italic; display:none;' class="sessionIDError">Invalid Session ID!</span>
+    <span style='color:red; font-style: italic; display:none;' class="sessionPWError">Invalid Session Password!</span>
+
+</div>

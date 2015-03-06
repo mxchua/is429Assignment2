@@ -1,0 +1,30 @@
+<div>
+    {{userLoggedin}}
+    <h3>Session ID: {{selectedSessionID}}</h3> 
+    <span style='color:red; font-style: italic; display:none;' class="revoteError">You voted for the question already!</span>
+    <div class="panel panel-default" ng-repeat="question in questions">
+        <div class="panel-body">
+            <div class="sessionQn">
+                {{question.question}}
+            </div>
+            <div class="pull-right sessionVoteBlock">
+                <div class="sessionVote">
+                    Votes<br/>
+                    {{question.vote}}
+                </div>
+                <div class="sessionVoteBtn">
+                    <button class="btn btn-default" ng-click="vote(question.$id)">Vote</button>
+                </div>   
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <div>
+        <h3>Post a question</h3>
+        <span>Your question</span><br>
+        <textarea name="userInputQuestion" cols="185" rows="5"></textarea>
+    </div>
+    <button class="btn btn-default pull-right" ng-click="addQuestion()">Post Question</button>
+</div>
